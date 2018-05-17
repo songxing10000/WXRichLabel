@@ -1,6 +1,6 @@
 # WXRichLabel
 Weex 富文本 Weex协议 Weex链接 WXRichLabel Weex Label点击事件
-# https://www.jianshu.com/p/cef69801b28a
+
 
 
 使用方法
@@ -17,29 +17,31 @@ weex端
 
 // richLabel的点击事件
 richClick: function(e) {
-modal.toast({
-message: "" + e.start,
-duration: 1
-});
+    modal.toast({
+        message: "" + e.start, e.end, e.color, e.text,
+        duration: 1
+    });
 }
 ```
 ```css
 .richLabel {
-margin-top: 30;
-margin-bottom: 30;
-border-width: 2px;
-border-style: solid;
-border-color: #41b883;
-width: auto;
-height: 100px;
-margin: 20px;
-padding: 10px;
+    margin-top: 30;
+    margin-bottom: 30;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #41b883;
+    width: auto;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
 
-font-size: 28px;
-normalcolor: #2a2a2a;
-text: "我已阅读并同意《借款协议》《债权转让协议》《网络借贷风险和禁止性行为提示书》";
-linespacing: 16px;
-width: 690px;
+    font-size: 28px;
+    normalcolor: #2a2a2a;
+    text: "我已阅读并同意《借款协议》《债权转让协议》《网络借贷风险和禁止性行为提示书》";
+    linespacing: 16px;
+    width: 690px;
 }
 
 ```
+
+# https://www.jianshu.com/p/cef69801b28a
